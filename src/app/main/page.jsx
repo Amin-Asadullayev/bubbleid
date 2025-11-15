@@ -89,9 +89,7 @@ const depositToBubble = async () => {
   }
 };
   useEffect(() => {
-    if (!user) {
-      router.push("/login");
-    };
+    if (!user) {return;};
 
     const fetchDashboardData = async () => {
       try {
