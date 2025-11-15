@@ -103,7 +103,7 @@ export default function SignupPage() {
         });
       }
 
-      router.push("/dashboard");
+      router.push("/main");
     } catch (err) {
       setError(getErrorMessage(err));
     } finally {
